@@ -73,7 +73,7 @@ const client = fetish.with(customFetch(fetch));
 
 ### Custom Anything
 
-Here is a glimpse of how fetish is implemented. It starts with [fetish-nude]() which is a simple wrapper around fetch with only one extra method called `with` used to add plugins. Plugins, which are just functions from one fetish to a better fetish, are then added to it.
+Here is a glimpse of how fetish is implemented. It starts with [fetish-nude](https://github.com/futpib/fetish/tree/master/packages/fetish-nude) which is a simple wrapper around fetch with only one extra method called `with` used to add plugins. Plugins, which are just functions from one fetish to a better fetish, are then added to it.
 
 ```
 npm i fetish-nude fetish-plugin-todo
