@@ -1,0 +1,18 @@
+{
+  "xo": {
+    "globals": ["fetch", "Promise"],
+    "rules": {
+      "no-restricted-globals": [
+        "error",
+        "Promise",
+        "fetch",
+        "Headers",
+        "Request",
+        "Response"
+      ]
+    }
+  },
+  "devDependencies": {
+    "lerna": "^2.0.0"
+  }
+}

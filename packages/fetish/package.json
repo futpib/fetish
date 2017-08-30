@@ -1,0 +1,22 @@
+{
+  "name": "fetish",
+  "version": "0.0.0",
+  "description": "Fetch shamelessly",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "author": "futpib <futpib@gmail.com>",
+  "license": "MIT OR GPL-3.0+",
+  "xo": false,
+  "dependencies": {
+    "es6-promise": "^4.1.1",
+    "fetish-peer": "^0.0.0",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "sinon": "^3.2.1",
+    "xo": "^0.18.2"
+  }
+}

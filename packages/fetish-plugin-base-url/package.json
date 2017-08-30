@@ -1,0 +1,20 @@
+{
+  "name": "fetish-plugin-base-url",
+  "version": "0.0.0",
+  "description": "Set base url for your `fetish`",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "author": "futpib <futpib@gmail.com>",
+  "license": "MIT OR GPL-3.0+",
+  "xo": false,
+  "peerDependencies": {
+    "fetish-nude": "^0.0.0"
+  },
+  "devDependencies": {
+    "fetish-nude": "^0.0.0",
+    "ava": "^0.22.0",
+    "xo": "^0.18.2"
+  }
+}

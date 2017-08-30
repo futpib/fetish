@@ -1,0 +1,29 @@
+{
+  "name": "fetish-peer",
+  "version": "0.0.0",
+  "description": "Fetish without dependency on fetch and Promise polyfills",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "author": "futpib <futpib@gmail.com>",
+  "license": "MIT OR GPL-3.0+",
+  "xo": false,
+  "dependencies": {
+    "fetish-nude": "^0.0.0",
+    "fetish-plugin-serialize-query": "^0.0.0",
+    "fetish-plugin-serialize-body-to-json": "^0.0.0",
+    "fetish-plugin-base-url": "^0.0.0",
+    "fetish-plugin-default-headers": "^0.0.0",
+    "fetish-plugin-custom-fetch": "^0.0.0",
+    "fetish-plugin-custom-promise": "^0.0.0",
+    "fetish-plugin-fetch-drop-in": "^0.0.0",
+    "fetish-plugin-http-methods": "^0.0.0",
+    "fetish-plugin-multicast-response": "^0.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "sinon": "^3.2.1",
+    "xo": "^0.18.2"
+  }
+}
