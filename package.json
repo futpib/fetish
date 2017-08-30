@@ -1,6 +1,9 @@
 {
   "xo": {
-    "globals": ["fetch", "Promise"],
+    "globals": [
+      "fetch",
+      "Promise"
+    ],
     "rules": {
       "no-restricted-globals": [
         "error",
@@ -13,10 +16,14 @@
     }
   },
   "devDependencies": {
-    "lerna": "^2.0.0"
+    "ava": "^0.22.0",
+    "coveralls": "^2.13.1",
+    "lerna": "^2.0.0",
+    "nyc": "^11.1.0",
+    "xo": "^0.18.2"
   },
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "test": "lerna run test"
+    "test": "xo && nyc ava"
   }
 }
