@@ -2,6 +2,13 @@
   "name": "fetish-plugin-base-url",
   "version": "0.0.1-0",
   "description": "Set base url for your `fetish`",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"

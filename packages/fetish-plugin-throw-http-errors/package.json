@@ -2,6 +2,13 @@
   "name": "fetish-plugin-throw-http-errors",
   "version": "0.0.1-0",
   "description": "Turn erroneous http statuses into exceptions",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"

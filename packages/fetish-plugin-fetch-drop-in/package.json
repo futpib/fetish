@@ -2,6 +2,13 @@
   "name": "fetish-plugin-fetch-drop-in",
   "version": "0.0.1-0",
   "description": "Adds `fetch`-compatible method for use as drop-in replacement",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"

@@ -2,6 +2,13 @@
   "name": "fetish-nude",
   "version": "0.0.1-0",
   "description": "Start building your perfect `fetch` with this",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"

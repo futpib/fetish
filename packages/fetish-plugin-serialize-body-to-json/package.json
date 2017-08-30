@@ -2,6 +2,13 @@
   "name": "fetish-plugin-serialize-body-to-json",
   "version": "0.0.1-0",
   "description": "Turn `option.body` into JSON string",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"

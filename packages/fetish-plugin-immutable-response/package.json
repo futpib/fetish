@@ -2,6 +2,13 @@
   "name": "fetish-plugin-immutable-response",
   "version": "0.0.1-0",
   "description": "Parse responses into Immutable.js data structures",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"

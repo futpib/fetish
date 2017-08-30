@@ -2,6 +2,13 @@
   "name": "fetish-plugin-serialize-query",
   "version": "0.0.1-0",
   "description": "Set `fetish` default request headers",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"
