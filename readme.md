@@ -52,7 +52,7 @@ Boxed fetish pulls in [isomorphic-fetch](https://github.com/matthew-andrews/isom
 
 #### Custom Promise
 
-```
+```js
 import {fetish, customPromise} from 'fetish';
 import Promise from 'bluebird';
 
