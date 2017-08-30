@@ -16,6 +16,7 @@
     "lerna": "^2.0.0"
   },
   "scripts": {
+    "postinstall": "lerna bootstrap",
     "test": "lerna run test"
   }
 }
