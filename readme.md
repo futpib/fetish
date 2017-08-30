@@ -98,7 +98,7 @@ npm i fetish-peer
 
 Plugins are middlewares. Whoa, right?
 
-The complete list can be found in [packages](TODO) directory and [on npm](https://www.npmjs.com/search?q=keywords:fetish).
+The complete list can be found in [packages](https://github.com/futpib/fetish/tree/master/packages/) directory and [on npm](https://www.npmjs.com/search?q=keywords:fetish).
 
 #### Drop-in fetch replacement
 
