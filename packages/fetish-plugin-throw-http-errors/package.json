@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-throw-http-errors",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "Turn erroneous http statuses into exceptions",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,11 @@
   "license": "MIT OR GPL-3.0+",
   "xo": false,
   "peerDependencies": {
-    "fetish-nude": "^0.0.0"
+    "fetish-nude": "^0.0.1-0"
   },
   "devDependencies": {
-    "fetish-nude": "^0.0.0",
     "ava": "^0.22.0",
+    "fetish-nude": "^0.0.1-0",
     "xo": "^0.18.2"
   }
 }

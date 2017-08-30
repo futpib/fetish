@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-custom-promise",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "Use custom `Promise` implementation with `fetish`",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,11 @@
   "license": "MIT OR GPL-3.0+",
   "xo": false,
   "peerDependencies": {
-    "fetish-nude": "^0.0.0"
+    "fetish-nude": "^0.0.1-0"
   },
   "devDependencies": {
     "ava": "^0.22.0",
-    "fetish-nude": "^0.0.0",
+    "fetish-nude": "^0.0.1-0",
     "sinon": "^3.2.1",
     "xo": "^0.18.2"
   }
