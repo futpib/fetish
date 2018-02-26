@@ -19,9 +19,7 @@ const fetish = fetishNude
 	.with(serializeQuery)
 	.with(serializeBodyToJson)
 	.with(fetchDropIn)
-	.with(httpMethods)
-;
-
+	.with(httpMethods);
 module.exports = {
 	fetish,
 

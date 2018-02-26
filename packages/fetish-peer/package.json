@@ -29,8 +29,8 @@
     "fetish-plugin-serialize-query": "^0.0.1-1"
   },
   "devDependencies": {
-    "ava": "^0.22.0",
+    "ava": "^0.25.0",
     "sinon": "^3.2.1",
-    "xo": "^0.18.2"
+    "xo": "^0.20.3"
   }
 }
