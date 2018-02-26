@@ -1,4 +1,5 @@
 {
+  "private": true,
   "xo": {
     "globals": [
       "fetch",
@@ -18,12 +19,16 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "coveralls": "^2.13.1",
-    "lerna": "^2.0.0",
     "nyc": "^11.1.0",
     "xo": "^0.18.2"
   },
   "scripts": {
-    "postinstall": "lerna bootstrap",
     "test": "xo && nyc ava"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "lerna": "^2.9.0"
   }
 }
