@@ -7,6 +7,7 @@ const defaultHeaders = require('fetish-plugin-default-headers');
 const customFetch = require('fetish-plugin-custom-fetch');
 const customPromise = require('fetish-plugin-custom-promise');
 
+const serializePathnameArray = require('fetish-plugin-serialize-pathname-array');
 const serializeQuery = require('fetish-plugin-serialize-query');
 const serializeBodyToJson = require('fetish-plugin-serialize-body-to-json');
 
@@ -16,6 +17,7 @@ const httpMethods = require('fetish-plugin-http-methods');
 const multicastResponse = require('fetish-plugin-multicast-response');
 
 const fetish = fetishNude
+	.with(serializePathnameArray)
 	.with(serializeQuery)
 	.with(serializeBodyToJson)
 	.with(fetchDropIn)

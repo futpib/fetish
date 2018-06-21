@@ -1,4 +1,6 @@
 
+const normalizeArguments = require('fetish-lib-normalize-arguments');
+
 const methods = (() => {
 	const methods = {};
 
@@ -12,11 +14,8 @@ const methods = (() => {
 		'post',
 		'put'
 	].forEach(method => {
-		methods[method] = function (options) {
-			// FIXME: This code duplicates `normalizeOptions`
-			if (typeof options === 'string') {
-				options = {url: options};
-			}
+		methods[method] = function (...args) {
+			const options = normalizeArguments(...args);
 			return this(Object.assign({
 				method
 			}, options));

@@ -4,15 +4,10 @@ const defaultFetch = (typeof fetch === 'undefined' ? undefined : fetch);
 // eslint-disable-next-line no-restricted-globals
 const defaultPromise = (typeof Promise === 'undefined' ? undefined : Promise);
 
-const normalizeOptions = options => {
-	if (typeof options === 'string') {
-		options = {url: options};
-	}
-	return Object.assign({}, options);
-};
+const normalizeArguments = require('fetish-lib-normalize-arguments');
 
-const fetish = options => {
-	options = normalizeOptions(options);
+const fetish = (...args) => {
+	const options = normalizeArguments(...args);
 
 	const fetch = options.fetch || defaultFetch;
 	const Promise = options.Promise || defaultPromise;
@@ -31,8 +26,8 @@ fetish.with = function (plugin) {
 	const oldFetish = Object.assign(options => this(options), this);
 	const newFetish = plugin(oldFetish);
 	return Object.assign(
-		options => {
-			options = normalizeOptions(options);
+		(...args) => {
+			const options = normalizeArguments(...args);
 			const result = newFetish(options);
 
 			if (!result || typeof result.then !== 'function') {

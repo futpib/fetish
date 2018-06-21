@@ -1,7 +1,7 @@
 {
-  "name": "fetish-plugin-http-methods",
+  "name": "fetish-lib-normalize-arguments",
   "version": "0.0.1-1",
-  "description": "Adds HTTP verb methods to fetish",
+  "description": "Normalize `fetish` arguments",
   "keywords": [
     "fetish",
     "fetch",
@@ -16,9 +16,6 @@
   "author": "futpib <futpib@gmail.com>",
   "license": "MIT OR GPL-3.0+",
   "xo": false,
-  "dependencies": {
-    "fetish-lib-normalize-arguments": "^0.0.1-1"
-  },
   "peerDependencies": {
     "fetish-nude": "^0.0.1-1"
   },
