@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-custom-promise",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Use custom `Promise` implementation with `fetish`",
   "keywords": [
     "fetish",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "fetish-nude": "^0.0.2",
+    "fetish-nude": "^0.0.3",
     "sinon": "^3.2.1",
     "xo": "^0.20.3"
   }

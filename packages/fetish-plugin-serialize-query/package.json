@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-serialize-query",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Set `fetish` default request headers",
   "keywords": [
     "fetish",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "fetish-nude": "^0.0.2",
+    "fetish-nude": "^0.0.3",
     "xo": "^0.20.3"
   }
 }

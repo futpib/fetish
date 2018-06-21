@@ -1,6 +1,6 @@
 {
   "name": "fetish-nude",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Start building your perfect `fetch` with this",
   "keywords": [
     "fetish",
@@ -18,7 +18,7 @@
   "repository": "github:futpib/fetish",
   "xo": false,
   "dependencies": {
-    "fetish-lib-normalize-arguments": "^0.0.2"
+    "fetish-lib-normalize-arguments": "^0.0.3"
   },
   "devDependencies": {
     "ava": "^0.25.0",
