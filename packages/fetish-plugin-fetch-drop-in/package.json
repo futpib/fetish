@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-fetch-drop-in",
-  "version": "0.0.1-1",
+  "version": "0.0.2",
   "description": "Adds `fetch`-compatible method for use as drop-in replacement",
   "keywords": [
     "fetish",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "fetish-nude": "^0.0.1-1",
+    "fetish-nude": "^0.0.2",
     "xo": "^0.20.3"
   }
 }
