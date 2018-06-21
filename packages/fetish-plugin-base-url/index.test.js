@@ -39,3 +39,13 @@ test('relative base url (base path)', async t => {
 		}
 	});
 });
+
+test('no url option', async t => {
+	const base = '/pets';
+
+	await fetish.with(baseUrl(base))({
+		fetch: url => {
+			t.is(url, '/pets');
+		}
+	});
+});

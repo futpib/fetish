@@ -24,3 +24,15 @@ test('intro example', async t => {
 		}
 	});
 });
+
+test('`baseUrl` + `serializePathnameArray`', async t => {
+	const client = fetish
+		.with(baseUrl('http://example.org/api/v2'));
+
+	await client({
+		pathname: ['foo'],
+		fetch: url => {
+			t.is(url, 'http://example.org/api/v2/foo');
+		}
+	});
+});

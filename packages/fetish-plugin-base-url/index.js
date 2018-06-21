@@ -5,10 +5,16 @@ function isAbsolute(url) {
 	return url.host;
 }
 
-module.exports = baseUrl => {
-	baseUrl = url.parse(baseUrl);
+module.exports = baseUrlString => {
+	const baseUrl = url.parse(baseUrlString);
 
 	return oldFetish => options => {
+		if (!options.url) {
+			return oldFetish(Object.assign({}, options, {
+				url: baseUrlString
+			}));
+		}
+
 		const optionsUrl = url.parse(options.url);
 
 		const resultUrl = (isAbsolute(optionsUrl) && isAbsolute(baseUrl)) ? optionsUrl : {
