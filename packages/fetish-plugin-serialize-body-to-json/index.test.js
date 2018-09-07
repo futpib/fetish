@@ -1,6 +1,8 @@
 
 import test from 'ava';
 
+import FormData from 'form-data';
+
 import {fetish} from 'fetish-nude';
 import serializeBodyToJson from '.';
 
@@ -13,6 +15,17 @@ test(async t => {
 		body,
 		fetch: (url, options) => {
 			t.deepEqual(JSON.parse(options.body), body);
+		}
+	});
+});
+
+test('body instanceof FormData', async t => {
+	const body = new FormData();
+
+	await fetish.with(serializeBodyToJson)({
+		body,
+		fetch: (url, options) => {
+			t.is(options.body, body);
 		}
 	});
 });
