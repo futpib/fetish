@@ -14,11 +14,19 @@
         "Request",
         "Response"
       ]
-    }
+    },
+    "extends": [
+      "eslint-config-xo-overrides"
+    ]
   },
   "devDependencies": {
+    "ava": "^1.4.1",
     "coveralls": "^2.13.1",
-    "nyc": "^12.0.2"
+    "eslint-config-xo-overrides": "^1.3.0",
+    "globby": "^9.1.0",
+    "nyc": "^12.0.2",
+    "ramda": "^0.26.1",
+    "xo": "^0.24.0"
   },
   "scripts": {
     "test": "xo && nyc ava"
