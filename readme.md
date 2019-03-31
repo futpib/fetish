@@ -4,8 +4,6 @@
 
 [![Build Status](https://travis-ci.org/futpib/fetish.svg?branch=master)](https://travis-ci.org/futpib/fetish) [![Coverage Status](https://coveralls.io/repos/github/futpib/fetish/badge.svg?branch=master)](https://coveralls.io/github/futpib/fetish?branch=master) [![Dependency Status](https://dependencyci.com/github/futpib/fetish/badge)](https://dependencyci.com/github/futpib/fetish) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Gitter](https://badges.gitter.im/join_chat.svg)](https://gitter.im/futpib-fetish)
 
-# Work in progress - do not try at home just yet
-
 ## Why fetish?
 
 - [Drop-in fetch replacement](#drop-in-fetch-replacement)
@@ -75,24 +73,25 @@ const client = fetish.with(customFetch(fetch));
 
 Here is a glimpse of how fetish is implemented. It starts with [fetish-nude](https://github.com/futpib/fetish/tree/master/packages/fetish-nude) which is a simple wrapper around fetch with only one extra method called `with` used to add plugins. Plugins, which are just functions from one fetish to a better fetish, are then added to it.
 
+Let's build a barebone http client with only one added feature: it will `JSON.stringify` the request body.
+
 ```
-npm i fetish-nude fetish-plugin-todo
+npm i fetish-nude fetish-plugin-fetish-plugin-serialize-body-to-json
 ```
 
-TODO
+```js
+exports.fetish = fetishNude
+	.with(serializeBodyToJson);
+```
 
-If that's not enough, [creating a custom plugin is trivial](#custom-plugins).
+If none of the [existing plugins](https://www.npmjs.com/search?q=fetish-plugin-*) suits your fancy, [creating a custom plugin](#custom-plugins) is trivial.
 
 
 ### Fetish with peer dependencies
 
-Obviously, if you choose this package, it is expected that your runtime has native fetch and Promise support or that you install fetch and Promise polyfills of your choice separately.
+If you don't want to use `isomorphic-fetch` or `es6-promise` polyfills that come as dependencies with the `fetish` package, use `fetish-peer` instead.
 
-TODO
-
-```
-npm i fetish-peer
-```
+Obviously, if you choose `fetish-peer` package, it is expected that your runtime has native fetch and Promise support or that you install fetch and Promise polyfills of your choice separately.
 
 ## Plugins and Middlewares
 
@@ -206,7 +205,7 @@ const postMethod = nextFetish => Object.assign(nextFetish, {
 const client = fetish.with(postMethod);
 
 // Later:
-const response = await client.post({ 
+const response = await client.post({
 	url: '/posts/',
 	body: { i: 'post' }
 });
@@ -222,17 +221,13 @@ If you deicide to publish your plugins to npm separately from this repo, please 
 
 ## Contributing
 
-TODO
-
 1. Fork this
 2. Add a package under packages
 3. Code
 4. Use [ava](https://github.com/avajs/ava) for tests and [xo](https://github.com/sindresorhus/xo) for linting
 5. Submit a pull request
 
-```
-lerna bootstrap
-```
+Don't forget to `lerna bootstrap`.
 
 ## Prior art / inspirations / alternatives
 
@@ -242,7 +237,7 @@ lerna bootstrap
 - [fetch-it](https://github.com/tryolabs/fetch-it)
 
 ### Other
-  	
+
 - [axios](https://github.com/mzabriskie/axios)
 - [got](https://github.com/sindresorhus/got)
 - [request](https://github.com/request/request)
