@@ -28,7 +28,8 @@
     "fetish-plugin-multicast-response": "^0.0.4",
     "fetish-plugin-serialize-body-to-json": "^0.0.4",
     "fetish-plugin-serialize-pathname-array": "^0.0.4",
-    "fetish-plugin-serialize-query": "^0.0.4"
+    "fetish-plugin-serialize-query": "^0.0.4",
+    "fetish-plugin-throw-http-errors": "^0.0.4"
   },
   "devDependencies": {
     "ava": "^1.4.1",

@@ -4,6 +4,8 @@ const { fetish: fetishNude } = require('fetish-nude');
 const baseUrl = require('fetish-plugin-base-url');
 const defaultHeaders = require('fetish-plugin-default-headers');
 
+const throwHttpErrors = require('fetish-plugin-throw-http-errors');
+
 const customFetch = require('fetish-plugin-custom-fetch');
 const customPromise = require('fetish-plugin-custom-promise');
 
@@ -22,11 +24,14 @@ const fetish = fetishNude
 	.with(serializeBodyToJson)
 	.with(fetchDropIn)
 	.with(httpMethods);
+
 module.exports = {
 	fetish,
 
 	baseUrl,
 	defaultHeaders,
+
+	throwHttpErrors,
 
 	customFetch,
 	customPromise,
