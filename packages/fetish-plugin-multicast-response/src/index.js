@@ -9,7 +9,7 @@ const bodyMethods = [
 	'json',
 	'text',
 	// `fetish-plugin-immutable-response`
-	'immutable'
+	'immutable',
 ];
 
 module.exports = oldFetish => options => oldFetish(options).then(response => {
@@ -17,12 +17,14 @@ module.exports = oldFetish => options => oldFetish(options).then(response => {
 		if (!(method in response)) {
 			return;
 		}
+
 		const parse = response[method].bind(response);
 		let cache = NULL;
 		response[method] = () => {
 			if (cache === NULL) {
 				cache = parse();
 			}
+
 			return cache;
 		};
 	});

@@ -34,7 +34,7 @@ fetish.with = function (plugin) {
 				const e = new Error([
 					'A plugin did not return a promise,',
 					'expected `Promise<Response>`, instead got:',
-					String(result)
+					String(result),
 				].join(' '));
 				e.actual = result;
 				e.plugin = plugin;
@@ -49,5 +49,5 @@ fetish.with = function (plugin) {
 };
 
 module.exports = {
-	fetish
+	fetish,
 };

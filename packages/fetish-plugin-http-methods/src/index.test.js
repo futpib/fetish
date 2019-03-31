@@ -1,7 +1,7 @@
 
 import test from 'ava';
 
-import {fetish} from 'fetish-nude';
+import { fetish } from 'fetish-nude';
 import fetishMethods from '.';
 
 const methods = [
@@ -12,7 +12,7 @@ const methods = [
 	'options',
 	'patch',
 	'post',
-	'put'
+	'put',
 ];
 
 const requestMacro = async (t, method) => {
@@ -20,12 +20,12 @@ const requestMacro = async (t, method) => {
 
 	const fetch = (url, options) => {
 		t.is(url, 'test');
-		t.deepEqual(options, {method});
+		t.deepEqual(options, { method });
 	};
 
 	await fetish.with(fetishMethods)[method]({
 		url: 'test',
-		fetch
+		fetch,
 	});
 };
 
@@ -34,11 +34,11 @@ const requestTwoArgMacro = async (t, method) => {
 
 	const fetch = (url, options) => {
 		t.is(url, 'test');
-		t.deepEqual(options, {method});
+		t.deepEqual(options, { method });
 	};
 
 	await fetish.with(fetishMethods)[method]('test', {
-		fetch
+		fetch,
 	});
 };
 

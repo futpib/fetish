@@ -8,16 +8,16 @@ import Immutable from 'immutable';
 
 import test from 'ava';
 
-import {fetish} from 'fetish-nude';
+import { fetish } from 'fetish-nude';
 import immutableResponse from '.';
 
-test(async t => {
+test('`response.immutable` method works', async t => {
 	const json = {
-		test: 'best'
+		test: 'best',
 	};
 
 	const response = await fetish.with(immutableResponse)({
-		fetch: () => new Response(JSON.stringify(json))
+		fetch: () => new Response(JSON.stringify(json)),
 	});
 
 	t.true(Immutable.is(await response.immutable(), Immutable.fromJS(json)));

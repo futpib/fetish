@@ -1,14 +1,14 @@
 /* eslint-disable no-restricted-globals */
 
 import test from 'ava';
-import {spy} from 'sinon';
+import { spy } from 'sinon';
 
-import {fetish} from 'fetish-nude';
+import { fetish } from 'fetish-nude';
 import customPromise from '.';
 
 class MyPromise extends Promise {}
 
-test(async t => {
+test('uses custom `Promise` constructor', async t => {
 	const spyFetish = spy(fetish);
 
 	const response = {};
@@ -18,9 +18,9 @@ test(async t => {
 		method: 'GET',
 		fetch: (url, options) => {
 			t.is(url, 'test');
-			t.deepEqual(options, {method: 'GET'});
+			t.deepEqual(options, { method: 'GET' });
 			return response;
-		}
+		},
 	});
 
 	t.true(promise instanceof MyPromise);
@@ -29,7 +29,7 @@ test(async t => {
 
 	t.true(spyFetish.calledOnce);
 
-	const {args: [options], returnValue} = spyFetish.lastCall;
+	const { args: [ options ], returnValue } = spyFetish.lastCall;
 
 	t.true(options.Promise === MyPromise);
 	t.true(returnValue instanceof MyPromise);

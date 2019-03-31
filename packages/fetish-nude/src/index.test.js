@@ -1,9 +1,9 @@
 /* eslint-disable no-restricted-globals */
 
 import test from 'ava';
-import {spy} from 'sinon';
+import { spy } from 'sinon';
 
-import {fetish} from '.';
+import { fetish } from '.';
 
 const methods = [
 	'connect',
@@ -12,7 +12,7 @@ const methods = [
 	'head',
 	'options',
 	'post',
-	'put'
+	'put',
 ];
 
 const requestMacro = async (t, method) => {
@@ -22,17 +22,17 @@ const requestMacro = async (t, method) => {
 	const actualResponse = await fetish({
 		url: 'test',
 		method,
-		fetch
+		fetch,
 	});
 
 	t.true(fetch.calledOnce);
 	t.is(actualResponse, response);
 
-	const [url, options] = fetch.lastCall.args;
+	const [ url, options ] = fetch.lastCall.args;
 
 	t.is(url, 'test');
 	t.is(options.method, method);
-	t.deepEqual(Object.keys(options), ['method']);
+	t.deepEqual(Object.keys(options), [ 'method' ]);
 };
 
 methods.forEach(method => {
@@ -47,7 +47,7 @@ test('async middleware', async t => {
 
 	const options = {
 		url: 'test',
-		fetch
+		fetch,
 	};
 
 	const plugin = next => {
@@ -69,7 +69,7 @@ test('async middleware', async t => {
 	t.true(fetch.calledOnce);
 	t.is(actualResponse, response);
 
-	const [url, actualOptions] = fetch.lastCall.args;
+	const [ url, actualOptions ] = fetch.lastCall.args;
 
 	t.is(url, 'test');
 	t.deepEqual(actualOptions, {});
@@ -92,7 +92,7 @@ test('middleware composition', async t => {
 			fetch: async (url, options) => {
 				t.is(url, 'test');
 				t.deepEqual(options, {});
-			}
+			},
 		});
 });
 
@@ -113,7 +113,7 @@ test('`Promise` option', async t => {
 	const result = fetish({
 		url: '/test/',
 		Promise: MyPromise,
-		fetch: () => Promise.resolve(response)
+		fetch: () => Promise.resolve(response),
 	});
 
 	t.true(result instanceof MyPromise);
@@ -127,20 +127,20 @@ test('middleware composition can not be broken by a synchronous `fetch`', async 
 	await fetish
 		.with(syncIdentityMiddleware)
 		.with(asyncIdentityMiddleware)({
-			fetch: () => null
+			fetch: () => null,
 		});
 
 	t.pass();
 });
 
 test('expando plugin', t => {
-	const newFetish = fetish.with(old => Object.assign(x => old(x), {a: 1}));
+	const newFetish = fetish.with(old => Object.assign(x => old(x), { a: 1 }));
 	t.is(newFetish.a, 1);
 	t.is(fetish.a, undefined);
 });
 
 test('expando plugin cannot polute root fetish', t => {
-	const newFetish = fetish.with(old => Object.assign(old, {a: 1}));
+	const newFetish = fetish.with(old => Object.assign(old, { a: 1 }));
 	t.is(newFetish.a, 1);
 	t.is(fetish.a, undefined);
 });

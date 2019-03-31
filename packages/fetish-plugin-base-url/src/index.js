@@ -11,7 +11,7 @@ module.exports = baseUrlString => {
 	return oldFetish => options => {
 		if (!options.url) {
 			return oldFetish(Object.assign({}, options, {
-				url: baseUrlString
+				url: baseUrlString,
 			}));
 		}
 
@@ -25,12 +25,12 @@ module.exports = baseUrlString => {
 			hash: optionsUrl.hash || baseUrl.hash,
 			pathname: [
 				(baseUrl.pathname || ''),
-				(optionsUrl.pathname || '')
-			].join('/').replace(/\/{2,}/g, '/')
+				(optionsUrl.pathname || ''),
+			].join('/').replace(/\/{2,}/g, '/'),
 		};
 
 		return oldFetish(Object.assign({}, options, {
-			url: url.format(resultUrl)
+			url: url.format(resultUrl),
 		}));
 	};
 };

@@ -13,7 +13,10 @@
         "Headers",
         "Request",
         "Response"
-      ]
+      ],
+      "node/no-deprecated-api": ["error", {
+        "ignoreModuleItems": ["url.parse"]
+      }]
     },
     "extends": [
       "eslint-config-xo-overrides"

@@ -1,5 +1,5 @@
 
-const {fetish: fetishNude} = require('fetish-nude');
+const { fetish: fetishNude } = require('fetish-nude');
 
 const baseUrl = require('fetish-plugin-base-url');
 const defaultHeaders = require('fetish-plugin-default-headers');
@@ -34,5 +34,5 @@ module.exports = {
 	fetchDropIn,
 	httpMethods,
 
-	multicastResponse
+	multicastResponse,
 };

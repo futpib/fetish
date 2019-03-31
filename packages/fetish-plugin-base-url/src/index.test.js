@@ -1,7 +1,7 @@
 
 import test from 'ava';
 
-import {fetish} from 'fetish-nude';
+import { fetish } from 'fetish-nude';
 import baseUrl from '.';
 
 test('merging relative url with base url', async t => {
@@ -12,7 +12,7 @@ test('merging relative url with base url', async t => {
 		url: relative,
 		fetch: url => {
 			t.is(url, 'https://user:pass@host:31337/basepath/resource?b=rel&c=rel#hash');
-		}
+		},
 	});
 });
 
@@ -24,7 +24,7 @@ test('replacing base url with absolute url', async t => {
 		url: absolute,
 		fetch: url => {
 			t.is(url, absolute);
-		}
+		},
 	});
 });
 
@@ -36,7 +36,7 @@ test('relative base url (base path)', async t => {
 		url: resource,
 		fetch: url => {
 			t.is(url, '/pets/cats?q=mittens');
-		}
+		},
 	});
 });
 
@@ -46,6 +46,6 @@ test('no url option', async t => {
 	await fetish.with(baseUrl(base))({
 		fetch: url => {
 			t.is(url, '/pets');
-		}
+		},
 	});
 });

@@ -1,2 +1,2 @@
 
-module.exports = Promise => old => options => old(Object.assign({Promise}, options));
+module.exports = Promise => old => options => old(Object.assign({ Promise }, options));

@@ -21,8 +21,7 @@
     "fetish-nude": "^0.0.4"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "fetish-nude": "^0.0.4",
-    "xo": "^0.20.3"
+    "ava": "^1.4.1",
+    "fetish-nude": "^0.0.4"
   }
 }

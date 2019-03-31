@@ -12,12 +12,12 @@ const methods = (() => {
 		'options',
 		'patch',
 		'post',
-		'put'
+		'put',
 	].forEach(method => {
 		methods[method] = function (...args) {
 			const options = normalizeArguments(...args);
 			return this(Object.assign({
-				method
+				method,
 			}, options));
 		};
 	});

@@ -6,16 +6,16 @@ import fetch from 'isomorphic-fetch'; // Polyfill global.Response
 
 import test from 'ava';
 
-import {fetish} from 'fetish-nude';
+import { fetish } from 'fetish-nude';
 import multicastResponse from '.';
 
-test(async t => {
+test('Multiple calls to `.json()` work', async t => {
 	const json = {
-		test: 'best'
+		test: 'best',
 	};
 
 	const response = await fetish.with(multicastResponse)({
-		fetch: () => new Response(JSON.stringify(json))
+		fetch: () => new Response(JSON.stringify(json)),
 	});
 
 	t.deepEqual(await response.json(), json);

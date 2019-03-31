@@ -10,6 +10,6 @@ module.exports = oldFetish => options => {
 
 	return oldFetish(Object.assign({}, options, {
 		url: url.format(optionsUrl),
-		query: undefined
+		query: undefined,
 	}));
 };
