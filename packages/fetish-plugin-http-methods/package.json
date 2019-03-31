@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-http-methods",
-  "version": "0.0.4",
+  "version": "0.0.5-0",
   "description": "Adds HTTP verb methods to fetish",
   "keywords": [
     "fetish",
@@ -18,13 +18,13 @@
   "repository": "github:futpib/fetish",
   "xo": false,
   "dependencies": {
-    "fetish-lib-normalize-arguments": "^0.0.4"
+    "fetish-lib-normalize-arguments": "^0.0.5-0"
   },
   "peerDependencies": {
     "fetish-nude": "^0.0.4"
   },
   "devDependencies": {
     "ava": "^1.4.1",
-    "fetish-nude": "^0.0.4"
+    "fetish-nude": "^0.0.5-0"
   }
 }
