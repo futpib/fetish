@@ -14,9 +14,14 @@
         "Request",
         "Response"
       ],
-      "node/no-deprecated-api": ["error", {
-        "ignoreModuleItems": ["url.parse"]
-      }]
+      "node/no-deprecated-api": [
+        "error",
+        {
+          "ignoreModuleItems": [
+            "url.parse"
+          ]
+        }
+      ]
     },
     "extends": [
       "eslint-config-xo-overrides"
@@ -24,7 +29,7 @@
   },
   "devDependencies": {
     "ava": "^1.4.1",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.3",
     "eslint-config-xo-overrides": "^1.3.0",
     "globby": "^9.1.0",
     "nyc": "^12.0.2",
