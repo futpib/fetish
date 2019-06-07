@@ -21,7 +21,7 @@
     "immutable": "*"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
+    "ava": "^2.0.0",
     "fetish-nude": "^0.1.0",
     "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1"
