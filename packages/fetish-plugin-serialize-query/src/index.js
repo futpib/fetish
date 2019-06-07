@@ -8,8 +8,11 @@ module.exports = oldFetish => options => {
 	delete optionsUrl.search;
 	optionsUrl.query = Object.assign({}, optionsUrl.query, optionsQuery);
 
-	return oldFetish(Object.assign({}, options, {
+	const newOptions = Object.assign({}, options, {
 		url: url.format(optionsUrl),
-		query: undefined,
-	}));
+	});
+
+	delete newOptions.query;
+
+	return oldFetish(newOptions);
 };

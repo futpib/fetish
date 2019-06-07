@@ -1,8 +1,12 @@
 
-module.exports = (urlOrOptions, undefinedOrOptions) => {
-	if (typeof urlOrOptions === 'string') {
-		return Object.assign({ url: urlOrOptions }, undefinedOrOptions);
+module.exports = (urlOrPathnameOrOptions, undefinedOrOptions) => {
+	if (typeof urlOrPathnameOrOptions === 'string') {
+		return Object.assign({ url: urlOrPathnameOrOptions }, undefinedOrOptions);
 	}
 
-	return Object.assign({}, urlOrOptions);
+	if (Array.isArray(urlOrPathnameOrOptions)) {
+		return Object.assign({ pathname: urlOrPathnameOrOptions }, undefinedOrOptions);
+	}
+
+	return Object.assign({}, urlOrPathnameOrOptions);
 };

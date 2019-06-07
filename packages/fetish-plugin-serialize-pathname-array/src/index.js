@@ -11,11 +11,15 @@ module.exports = oldFetish => options => {
 	delete optionsUrl.path;
 	optionsUrl.pathname = (optionsUrl.pathname || '')
 		.split('/')
+		.filter((value, index) => value || index === 0)
 		.concat(options.pathname.map(encodeURIComponent))
 		.join('/');
 
-	return oldFetish(Object.assign({}, options, {
+	const newOptions = Object.assign({}, options, {
 		url: url.format(optionsUrl),
-		pathname: undefined,
-	}));
+	});
+
+	delete newOptions.pathname;
+
+	return oldFetish(newOptions);
 };
