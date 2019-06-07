@@ -23,7 +23,7 @@
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "sinon": "^3.2.1"
+    "ava": "0.25.0",
+    "sinon": "3.3.0"
   }
 }

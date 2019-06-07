@@ -21,7 +21,7 @@
     "fetish-lib-normalize-arguments": "^0.1.0"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
+    "ava": "1.4.1",
     "fetish-nude": "^0.1.0"
   }
 }

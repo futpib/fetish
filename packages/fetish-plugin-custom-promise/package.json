@@ -18,8 +18,8 @@
   "repository": "github:futpib/fetish",
   "xo": false,
   "devDependencies": {
-    "ava": "^1.4.1",
+    "ava": "1.4.1",
     "fetish-nude": "^0.1.0",
-    "sinon": "^3.2.1"
+    "sinon": "3.3.0"
   }
 }

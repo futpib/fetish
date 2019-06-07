@@ -28,14 +28,14 @@
     ]
   },
   "devDependencies": {
-    "ava": "^1.4.1",
-    "coveralls": "^3.0.3",
-    "eslint-config-xo-overrides": "^1.3.0",
-    "globby": "^9.1.0",
-    "husky": "^2.3.0",
-    "nyc": "^12.0.2",
-    "ramda": "^0.26.1",
-    "xo": "^0.24.0"
+    "ava": "1.4.1",
+    "coveralls": "3.0.3",
+    "eslint-config-xo-overrides": "1.3.0",
+    "globby": "9.1.0",
+    "husky": "2.3.0",
+    "nyc": "12.0.2",
+    "ramda": "0.26.1",
+    "xo": "0.24.0"
   },
   "scripts": {
     "test": "xo && nyc ava"
@@ -49,6 +49,6 @@
     }
   },
   "dependencies": {
-    "lerna": "^2.11.0"
+    "lerna": "2.11.0"
   }
 }
