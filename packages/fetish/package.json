@@ -1,6 +1,6 @@
 {
   "name": "fetish",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fetch shamelessly",
   "keywords": [
     "fetish",
@@ -19,7 +19,7 @@
   "xo": false,
   "dependencies": {
     "es6-promise": "^4.1.1",
-    "fetish-peer": "^0.1.0",
+    "fetish-peer": "^0.1.1",
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-base-url",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Set base url for your `fetish`",
   "keywords": [
     "fetish",
@@ -19,6 +19,6 @@
   "xo": false,
   "devDependencies": {
     "ava": "^2.0.0",
-    "fetish-nude": "^0.1.0"
+    "fetish-nude": "^0.1.1"
   }
 }
