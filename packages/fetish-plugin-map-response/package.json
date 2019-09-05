@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-map-response",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Transform `fetish` response",
   "keywords": [
     "fetish",
@@ -19,6 +19,6 @@
   "xo": false,
   "devDependencies": {
     "ava": "^2.3.0",
-    "fetish-nude": "^0.1.1"
+    "fetish-nude": "^0.1.2"
   }
 }

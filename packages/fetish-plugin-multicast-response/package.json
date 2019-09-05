@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-multicast-response",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Workaround 'Already read' error when reading response body multiple times",
   "keywords": [
     "fetish",
@@ -19,7 +19,7 @@
   "xo": false,
   "devDependencies": {
     "ava": "^2.3.0",
-    "fetish-nude": "^0.1.1",
+    "fetish-nude": "^0.1.2",
     "isomorphic-fetch": "^2.2.1"
   }
 }
