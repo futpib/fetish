@@ -42,6 +42,10 @@ module.exports = {
 	customFetch,
 	customPromise,
 
+	serializePathnameArray,
+	serializeQuery,
+	serializeBodyToJson,
+
 	fetchDropIn,
 	httpMethods,
 
