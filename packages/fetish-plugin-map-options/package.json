@@ -1,0 +1,24 @@
+{
+  "name": "fetish-plugin-map-options",
+  "version": "0.1.1",
+  "description": "Transform `fetish` options",
+  "keywords": [
+    "fetish",
+    "fetch",
+    "http",
+    "client",
+    "request"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "author": "futpib <futpib@gmail.com>",
+  "license": "MIT OR GPL-3.0+",
+  "repository": "github:futpib/fetish",
+  "xo": false,
+  "devDependencies": {
+    "ava": "^2.0.0",
+    "fetish-nude": "^0.1.1"
+  }
+}

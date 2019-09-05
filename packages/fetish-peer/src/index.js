@@ -1,6 +1,9 @@
 
 const { fetish: fetishNude } = require('fetish-nude');
 
+const mapOptions = require('fetish-plugin-map-options');
+const mapResponse = require('fetish-plugin-map-response');
+
 const baseUrl = require('fetish-plugin-base-url');
 const defaultHeaders = require('fetish-plugin-default-headers');
 
@@ -27,6 +30,9 @@ const fetish = fetishNude
 
 module.exports = {
 	fetish,
+
+	mapOptions,
+	mapResponse,
 
 	baseUrl,
 	defaultHeaders,

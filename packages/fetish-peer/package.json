@@ -29,7 +29,9 @@
     "fetish-plugin-serialize-body-to-json": "^0.1.1",
     "fetish-plugin-serialize-pathname-array": "^0.1.1",
     "fetish-plugin-serialize-query": "^0.1.1",
-    "fetish-plugin-throw-http-errors": "^0.1.1"
+    "fetish-plugin-throw-http-errors": "^0.1.1",
+    "fetish-plugin-map-options": "^0.1.1",
+    "fetish-plugin-map-response": "^0.1.1"
   },
   "devDependencies": {
     "ava": "^2.0.0",
