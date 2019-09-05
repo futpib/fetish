@@ -18,12 +18,12 @@
   "repository": "github:futpib/fetish",
   "xo": false,
   "dependencies": {
-    "es6-promise": "^4.1.1",
+    "es6-promise": "^4.2.8",
     "fetish-peer": "^0.1.1",
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
-    "ava": "^2.0.0",
-    "sinon": "^7.0.0"
+    "ava": "^2.3.0",
+    "sinon": "^7.4.2"
   }
 }

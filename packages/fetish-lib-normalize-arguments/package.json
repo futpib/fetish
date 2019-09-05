@@ -18,7 +18,7 @@
   "repository": "github:futpib/fetish",
   "xo": false,
   "devDependencies": {
-    "ava": "^2.0.0",
+    "ava": "^2.3.0",
     "fetish-nude": "^0.1.1"
   }
 }
