@@ -20,6 +20,6 @@
   "devDependencies": {
     "ava": "^2.3.0",
     "fetish-nude": "^0.1.2",
-    "sinon": "^7.4.2"
+    "sinon": "^8.0.0"
   }
 }
