@@ -20,6 +20,6 @@
   "devDependencies": {
     "ava": "^2.3.0",
     "fetish-nude": "^0.1.2",
-    "form-data": "^2.5.1"
+    "form-data": "^3.0.0"
   }
 }
