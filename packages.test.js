@@ -10,6 +10,7 @@ test('all `package.json`s are equal except name, deps and stuff', async t => {
 		.map(require)
 		.map(omit([
 			'name',
+			'version',
 			'description',
 			'dependencies',
 			'devDependencies',
