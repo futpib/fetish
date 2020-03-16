@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import mapResponse from '.';
+const { fetish } = require('fetish-nude');
+const mapResponse = require('.');
 
 test('response is transformed', async t => {
 	const response = {

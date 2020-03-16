@@ -1,7 +1,7 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import normalizeArguments from '.';
+const normalizeArguments = require('.');
 
 test('normalizeArguments', t => {
 	t.deepEqual(normalizeArguments({ a: 1 }), { a: 1 });

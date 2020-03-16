@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import fetishDropIn from '.';
+const { fetish } = require('fetish-nude');
+const fetishDropIn = require('.');
 
 test('`.fetch` works as expected', async t => {
 	const args = [ 'test', { method: 'TEST' } ];

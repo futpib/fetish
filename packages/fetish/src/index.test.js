@@ -1,7 +1,7 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish, baseUrl, defaultHeaders, customFetch } from '.';
+const { fetish, baseUrl, defaultHeaders, customFetch } = require('.');
 
 test.todo('All examples from readme');
 

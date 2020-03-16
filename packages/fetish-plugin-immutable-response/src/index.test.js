@@ -2,14 +2,14 @@
 /* eslint-disable no-restricted-globals */
 
 // eslint-disable-next-line no-unused-vars
-import fetch from 'isomorphic-fetch'; // Polyfill global.Response
+const fetch = require('isomorphic-fetch'); // Polyfill global.Response
 
-import Immutable from 'immutable';
+const Immutable = require('immutable');
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import immutableResponse from '.';
+const { fetish } = require('fetish-nude');
+const immutableResponse = require('.');
 
 test('`response.immutable` method works', async t => {
 	const json = {

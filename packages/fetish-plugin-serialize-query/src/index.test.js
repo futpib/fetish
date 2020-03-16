@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import serializeQuery from '.';
+const { fetish } = require('fetish-nude');
+const serializeQuery = require('.');
 
 test('query gets serialized', async t => {
 	await fetish.with(serializeQuery)({

@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import customFetch from '.';
+const { fetish } = require('fetish-nude');
+const customFetch = require('.');
 
 test('calls custom `fetch` function', async t => {
 	await fetish.with(customFetch((url, options) => {

@@ -1,10 +1,10 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import FormData from 'form-data';
+const FormData = require('form-data');
 
-import { fetish } from 'fetish-nude';
-import serializeBodyToJson from '.';
+const { fetish } = require('fetish-nude');
+const serializeBodyToJson = require('.');
 
 test('plain js object body gets stringified', async t => {
 	const body = {

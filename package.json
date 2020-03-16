@@ -31,14 +31,14 @@
     "verbose": true
   },
   "devDependencies": {
-    "ava": "^2.3.0",
-    "coveralls": "^3.0.6",
+    "ava": "^3.5.0",
+    "coveralls": "^3.0.9",
     "eslint-config-xo-overrides": "^1.4.0",
     "globby": "^11.0.0",
     "husky": "^4.0.0",
     "nyc": "^15.0.0",
     "ramda": "^0.27.0",
-    "xo": "^0.24.0"
+    "xo": "^0.28.0"
   },
   "scripts": {
     "test": "xo && nyc ava"
@@ -50,8 +50,5 @@
     "hooks": {
       "pre-push": "yarn test"
     }
-  },
-  "dependencies": {
-    "lerna": "^3.16.4"
   }
 }

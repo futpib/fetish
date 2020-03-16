@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import mapOptions from '.';
+const { fetish } = require('fetish-nude');
+const mapOptions = require('.');
 
 test('options are transformed', async t => {
 	await fetish.with(mapOptions(({ foo, ...options }) => ({

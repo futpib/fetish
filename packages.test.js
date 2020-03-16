@@ -1,9 +1,9 @@
-import fs from 'fs';
+const fs = require('fs');
 
-import test from 'ava';
+const test = require('ava');
 
-import { omit, last } from 'ramda';
-import globby from 'globby';
+const { omit, last } = require('ramda');
+const globby = require('globby');
 
 test('all `package.json`s are equal except name, deps and stuff', async t => {
 	const packages = (await globby('./packages/*/package.json'))
@@ -26,7 +26,7 @@ const excludedPlugins = new Set([
 	'fetish-plugin-immutable-response', // Would've shown `missing peer \`immutable\` dependency` warning to all users
 ]);
 
-test('every plugin (with some exceptions) is imported in `fetish-peer` and is it\'s dependency', t => {
+test('every plugin (with some exceptions) is imported in `fetish-peer` and is it’s dependency', t => {
 	const source = fs.readFileSync('./packages/fetish-peer/src/index.js', 'utf8');
 
 	const plugins = fs.readdirSync('./packages/')

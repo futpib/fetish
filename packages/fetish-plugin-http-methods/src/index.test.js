@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import fetishMethods from '.';
+const { fetish } = require('fetish-nude');
+const fetishMethods = require('.');
 
 const methods = [
 	'connect',
@@ -43,6 +43,6 @@ const requestTwoArgMacro = async (t, method) => {
 };
 
 methods.forEach(method => {
-	test(`'${method}' some`, requestMacro, method);
-	test(`'${method}' some with 2 arguments`, requestTwoArgMacro, method);
+	test(`’${method}’ some`, requestMacro, method);
+	test(`’${method}’ some with 2 arguments`, requestTwoArgMacro, method);
 });

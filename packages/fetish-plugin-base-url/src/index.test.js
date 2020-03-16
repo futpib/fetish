@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import baseUrl from '.';
+const { fetish } = require('fetish-nude');
+const baseUrl = require('.');
 
 test('merging relative url with base url', async t => {
 	const base = 'https://user:pass@host:31337/basepath?a=base&b=base#hash';

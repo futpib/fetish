@@ -1,10 +1,10 @@
 /* eslint-disable no-restricted-globals */
 
-import test from 'ava';
-import { spy } from 'sinon';
+const test = require('ava');
+const { spy } = require('sinon');
 
-import { fetish } from 'fetish-nude';
-import customPromise from '.';
+const { fetish } = require('fetish-nude');
+const customPromise = require('.');
 
 class MyPromise extends Promise {}
 

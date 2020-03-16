@@ -1,9 +1,9 @@
 /* eslint-disable no-restricted-globals */
 
-import test from 'ava';
-import { spy } from 'sinon';
+const test = require('ava');
+const { spy } = require('sinon');
 
-import { fetish } from '.';
+const { fetish } = require('.');
 
 const methods = [
 	'connect',
@@ -36,7 +36,7 @@ const requestMacro = async (t, method) => {
 };
 
 methods.forEach(method => {
-	test(`'${method}' some`, requestMacro, method);
+	test(`’${method}’ some`, requestMacro, method);
 });
 
 test('async middleware', async t => {

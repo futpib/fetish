@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import defaultHeaders from '.';
+const { fetish } = require('fetish-nude');
+const defaultHeaders = require('.');
 
 test('default headers are set', async t => {
 	await fetish.with(defaultHeaders({

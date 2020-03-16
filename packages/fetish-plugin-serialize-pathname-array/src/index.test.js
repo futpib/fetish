@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import serializePathnameArray from '.';
+const { fetish } = require('fetish-nude');
+const serializePathnameArray = require('.');
 
 test('with url', async t => {
 	await fetish.with(serializePathnameArray)({

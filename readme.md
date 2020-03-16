@@ -227,8 +227,6 @@ If you deicide to publish your plugins to npm separately from this repo, please 
 4. Use [ava](https://github.com/avajs/ava) for tests and [xo](https://github.com/sindresorhus/xo) for linting
 5. Submit a pull request
 
-Don't forget to `lerna bootstrap`.
-
 ## Prior art / inspirations / alternatives
 
 ### Fetch-compatible

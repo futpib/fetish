@@ -2,12 +2,12 @@
 /* eslint-disable no-restricted-globals */
 
 // eslint-disable-next-line no-unused-vars
-import fetch from 'isomorphic-fetch'; // Polyfill global.Response
+const fetch = require('isomorphic-fetch'); // Polyfill global.Response
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import multicastResponse from '.';
+const { fetish } = require('fetish-nude');
+const multicastResponse = require('.');
 
 test('Multiple calls to `.json()` work', async t => {
 	const json = {

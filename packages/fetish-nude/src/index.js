@@ -31,20 +31,20 @@ fetish.with = function (plugin) {
 			const result = newFetish(options);
 
 			if (!result || typeof result.then !== 'function') {
-				const e = new Error([
+				const error = new Error([
 					'A plugin did not return a promise,',
 					'expected `Promise<Response>`, instead got:',
 					String(result),
 				].join(' '));
-				e.actual = result;
-				e.plugin = plugin;
-				throw e;
+				error.actual = result;
+				error.plugin = plugin;
+				throw error;
 			}
 
 			return result;
 		},
 		oldFetish,
-		newFetish
+		newFetish,
 	);
 };
 

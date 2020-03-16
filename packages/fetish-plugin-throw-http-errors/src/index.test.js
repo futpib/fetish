@@ -1,8 +1,8 @@
 
-import test from 'ava';
+const test = require('ava');
 
-import { fetish } from 'fetish-nude';
-import httpErrors from '.';
+const { fetish } = require('fetish-nude');
+const httpErrors = require('.');
 
 test('404 throws an error', async t => {
 	const response = {
