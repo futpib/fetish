@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-default-headers",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Set `fetish` default request headers",
   "keywords": [
     "fetish",
@@ -19,6 +19,6 @@
   "xo": false,
   "devDependencies": {
     
-    "fetish-nude": "^0.1.2"
+    "fetish-nude": "^0.1.4"
   }
 }

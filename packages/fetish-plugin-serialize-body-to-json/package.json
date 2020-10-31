@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-serialize-body-to-json",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Turn `option.body` into JSON string",
   "keywords": [
     "fetish",
@@ -19,7 +19,7 @@
   "xo": false,
   "devDependencies": {
     
-    "fetish-nude": "^0.1.2",
+    "fetish-nude": "^0.1.4",
     "form-data": "^3.0.0"
   }
 }

@@ -36,6 +36,7 @@
     "eslint-config-xo-overrides": "^1.4.0",
     "globby": "^11.0.1",
     "husky": "^4.3.0",
+    "np": "^7.0.0",
     "nyc": "^15.1.0",
     "ramda": "^0.27.1",
     "wsrun": "^5.2.4",

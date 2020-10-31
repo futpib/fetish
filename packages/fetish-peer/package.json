@@ -1,6 +1,6 @@
 {
   "name": "fetish-peer",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Fetish without dependency on fetch and Promise polyfills",
   "keywords": [
     "fetish",
@@ -18,20 +18,20 @@
   "repository": "github:futpib/fetish",
   "xo": false,
   "dependencies": {
-    "fetish-nude": "^0.1.2",
-    "fetish-plugin-base-url": "^0.1.2",
-    "fetish-plugin-custom-fetch": "^0.1.2",
-    "fetish-plugin-custom-promise": "^0.1.2",
-    "fetish-plugin-default-headers": "^0.1.2",
-    "fetish-plugin-fetch-drop-in": "^0.1.2",
-    "fetish-plugin-http-methods": "^0.1.2",
-    "fetish-plugin-map-options": "^0.1.2",
-    "fetish-plugin-map-response": "^0.1.2",
-    "fetish-plugin-multicast-response": "^0.1.2",
-    "fetish-plugin-serialize-body-to-json": "^0.1.2",
-    "fetish-plugin-serialize-pathname-array": "^0.1.2",
-    "fetish-plugin-serialize-query": "^0.1.2",
-    "fetish-plugin-throw-http-errors": "^0.1.2"
+    "fetish-nude": "^0.1.4",
+    "fetish-plugin-base-url": "^0.1.4",
+    "fetish-plugin-custom-fetch": "^0.1.4",
+    "fetish-plugin-custom-promise": "^0.1.4",
+    "fetish-plugin-default-headers": "^0.1.4",
+    "fetish-plugin-fetch-drop-in": "^0.1.4",
+    "fetish-plugin-http-methods": "^0.1.4",
+    "fetish-plugin-map-options": "^0.1.4",
+    "fetish-plugin-map-response": "^0.1.4",
+    "fetish-plugin-multicast-response": "^0.1.4",
+    "fetish-plugin-serialize-body-to-json": "^0.1.4",
+    "fetish-plugin-serialize-pathname-array": "^0.1.4",
+    "fetish-plugin-serialize-query": "^0.1.4",
+    "fetish-plugin-throw-http-errors": "^0.1.4"
   },
   "devDependencies": {
     "sinon": "^9.2.1"

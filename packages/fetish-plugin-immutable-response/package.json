@@ -1,6 +1,6 @@
 {
   "name": "fetish-plugin-immutable-response",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Parse responses into Immutable.js data structures",
   "keywords": [
     "fetish",
@@ -21,7 +21,7 @@
     "immutable": "*"
   },
   "devDependencies": {
-    "fetish-nude": "^0.1.2",
+    "fetish-nude": "^0.1.4",
     "immutable": "^4.0.0-rc.12",
     "isomorphic-fetch": "^3.0.0"
   }
