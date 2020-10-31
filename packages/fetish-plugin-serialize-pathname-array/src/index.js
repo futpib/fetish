@@ -12,7 +12,7 @@ module.exports = oldFetish => options => {
 	optionsUrl.pathname = (optionsUrl.pathname || '')
 		.split('/')
 		.filter((value, index) => value || index === 0)
-		.concat(options.pathname.map(encodeURIComponent))
+		.concat(options.pathname.map(x => encodeURIComponent(x)))
 		.join('/');
 
 	const newOptions = Object.assign({}, options, {

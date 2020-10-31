@@ -7,7 +7,7 @@ const globby = require('globby');
 
 test('all `package.json`s are equal except name, deps and stuff', async t => {
 	const packages = (await globby('./packages/*/package.json'))
-		.map(require)
+		.map(x => require(x))
 		.map(omit([
 			'name',
 			'version',
@@ -31,7 +31,7 @@ test('every plugin (with some exceptions) is imported in `fetish-peer` and is it
 
 	const plugins = fs.readdirSync('./packages/')
 		.map(path => path.split('/'))
-		.map(last)
+		.map(x => last(x))
 		.filter(name => name.startsWith('fetish-plugin-'))
 		.filter(name => !excludedPlugins.has(name));
 
