@@ -16,9 +16,5 @@
   "author": "futpib <futpib@gmail.com>",
   "license": "MIT OR GPL-3.0+",
   "repository": "github:futpib/fetish",
-  "xo": false,
-  "devDependencies": {
-    
-    "fetish-nude": "^0.1.2"
-  }
+  "xo": false
 }
