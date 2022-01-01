@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "fetish-nude": "^0.1.4",
-    "immutable": "^4.0.0-rc.12",
+    "immutable": "^4.0.0",
     "isomorphic-fetch": "^3.0.0"
   }
 }

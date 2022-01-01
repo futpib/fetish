@@ -11,10 +11,10 @@ test('404 throws an error', async t => {
 	};
 	const fetch = () => response;
 
-	const err = await t.throwsAsync(fetish.with(httpErrors)({ fetch }));
+	const error = await t.throwsAsync(fetish.with(httpErrors)({ fetch }));
 
-	t.is(err.message, response.statusText);
-	t.is(err.response, response);
+	t.is(error.message, response.statusText);
+	t.is(error.response, response);
 });
 
 test('202 does not throw an error', async t => {

@@ -13,9 +13,9 @@ const bodyMethods = [
 ];
 
 module.exports = oldFetish => options => oldFetish(options).then(response => {
-	bodyMethods.forEach(method => {
+	for (const method of bodyMethods) {
 		if (!(method in response)) {
-			return;
+			continue;
 		}
 
 		const parse = response[method].bind(response);
@@ -27,6 +27,7 @@ module.exports = oldFetish => options => oldFetish(options).then(response => {
 
 			return cache;
 		};
-	});
+	}
+
 	return response;
 });
