@@ -3494,7 +3494,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^12.0.2":
+"globby@npm:^12.0.0, globby@npm:^12.0.2":
   version: 12.0.2
   resolution: "globby@npm:12.0.2"
   dependencies:
@@ -6341,7 +6341,7 @@ __metadata:
     ava: ^3.15.0
     coveralls: ^3.1.1
     eslint-config-xo-overrides: ^1.5.0
-    globby: ^11.0.4
+    globby: ^12.0.0
     husky: ^7.0.4
     nyc: ^15.1.0
     ramda: ^0.27.1
