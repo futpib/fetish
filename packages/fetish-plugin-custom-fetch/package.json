@@ -18,7 +18,6 @@
   "repository": "github:futpib/fetish",
   "xo": false,
   "devDependencies": {
-    
     "fetish-nude": "^0.1.4"
   }
 }
