@@ -42,7 +42,7 @@ const requestTwoArgMacro = async (t, method) => {
 	});
 };
 
-methods.forEach(method => {
+for (const method of methods) {
 	test(`’${method}’ some`, requestMacro, method);
 	test(`’${method}’ some with 2 arguments`, requestTwoArgMacro, method);
-});
+}

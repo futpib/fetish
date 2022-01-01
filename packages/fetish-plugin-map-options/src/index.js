@@ -1,4 +1,2 @@
 
-module.exports = mapper => oldFetish => options => {
-	return oldFetish(mapper(options));
-};
+module.exports = mapper => oldFetish => options => oldFetish(mapper(options));

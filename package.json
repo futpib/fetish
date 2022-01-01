@@ -21,7 +21,8 @@
             "url.parse"
           ]
         }
-      ]
+      ],
+      "unicorn/prefer-module": "off"
     },
     "extends": [
       "eslint-config-xo-overrides"
@@ -31,16 +32,15 @@
     "verbose": true
   },
   "devDependencies": {
-    "ava": "^3.13.0",
-    "coveralls": "^3.1.0",
-    "eslint-config-xo-overrides": "^1.4.0",
-    "globby": "^11.0.1",
-    "husky": "^4.3.0",
-    "np": "^7.0.0",
+    "ava": "^3.15.0",
+    "coveralls": "^3.1.1",
+    "eslint-config-xo-overrides": "^1.5.0",
+    "globby": "^11.0.4",
+    "husky": "^7.0.4",
     "nyc": "^15.1.0",
     "ramda": "^0.27.1",
     "wsrun": "^5.2.4",
-    "xo": "^0.34.1"
+    "xo": "^0.47.0"
   },
   "scripts": {
     "test": "xo && nyc ava"

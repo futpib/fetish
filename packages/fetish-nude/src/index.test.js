@@ -35,9 +35,9 @@ const requestMacro = async (t, method) => {
 	t.deepEqual(Object.keys(options), [ 'method' ]);
 };
 
-methods.forEach(method => {
+for (const method of methods) {
 	test(`’${method}’ some`, requestMacro, method);
-});
+}
 
 test('async middleware', async t => {
 	t.plan(7);
@@ -100,10 +100,10 @@ test('a readable error is thrown if middleware returns non-promise', async t => 
 	const response = null;
 	const syncNullMiddleware = () => () => response;
 
-	const err = await t.throws(() => fetish.with(syncNullMiddleware)('test'));
+	const error = await t.throws(() => fetish.with(syncNullMiddleware)('test'));
 
-	t.true(err instanceof Error);
-	t.regex(err.message, /promise/i);
+	t.true(error instanceof Error);
+	t.regex(error.message, /promise/i);
 });
 
 test('`Promise` option', async t => {

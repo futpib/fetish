@@ -6,7 +6,8 @@ const { omit, last } = require('ramda');
 const globby = require('globby');
 
 test('all `package.json`s are equal except name, deps and stuff', async t => {
-	const packages = (await globby('./packages/*/package.json'))
+	const packageJsonFiles = await globby('./packages/*/package.json');
+	const packages = packageJsonFiles
 		.map(x => require(x))
 		.map(omit([
 			'name',
@@ -17,9 +18,9 @@ test('all `package.json`s are equal except name, deps and stuff', async t => {
 			'peerDependencies',
 		]));
 
-	packages.forEach(package_ => {
+	for (const package_ of packages) {
 		t.deepEqual(package_, packages[0]);
-	});
+	}
 });
 
 const excludedPlugins = new Set([
@@ -35,7 +36,7 @@ test('every plugin (with some exceptions) is imported in `fetish-peer` and is it
 		.filter(name => name.startsWith('fetish-plugin-'))
 		.filter(name => !excludedPlugins.has(name));
 
-	plugins.forEach(plugin => {
+	for (const plugin of plugins) {
 		t.true(source.includes(plugin), `\`${plugin}\` is not mentioned in \`fetish-peer\``);
-	});
+	}
 });

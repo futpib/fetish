@@ -4,7 +4,7 @@ const normalizeArguments = require('fetish-lib-normalize-arguments');
 const methods = (() => {
 	const methods = {};
 
-	[
+	for (const method of [
 		'connect',
 		'delete',
 		'get',
@@ -13,14 +13,14 @@ const methods = (() => {
 		'patch',
 		'post',
 		'put',
-	].forEach(method => {
+	]) {
 		methods[method] = function (...args) {
 			const options = normalizeArguments(...args);
 			return this(Object.assign({
 				method,
 			}, options));
 		};
-	});
+	}
 
 	return methods;
 })();
