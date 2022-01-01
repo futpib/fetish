@@ -2,7 +2,7 @@
 
 > Fetch the way you desire
 
-[![Build Status](https://travis-ci.org/futpib/fetish.svg?branch=master)](https://travis-ci.org/futpib/fetish) [![Coverage Status](https://coveralls.io/repos/github/futpib/fetish/badge.svg?branch=master)](https://coveralls.io/github/futpib/fetish?branch=master) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Gitter](https://badges.gitter.im/join_chat.svg)](https://gitter.im/futpib-fetish)
+[![npm](https://shields.io/npm/v/fetish)](https://www.npmjs.com/package/fetish) [![Build Status](https://travis-ci.org/futpib/fetish.svg?branch=master)](https://travis-ci.org/futpib/fetish) [![Coverage Status](https://coveralls.io/repos/github/futpib/fetish/badge.svg?branch=master)](https://coveralls.io/github/futpib/fetish?branch=master) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Gitter](https://badges.gitter.im/join_chat.svg)](https://gitter.im/futpib-fetish)
 
 ## Why fetish?
 
