@@ -528,21 +528,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:^7.0.4":
-  version: 7.1.0
-  resolution: "@sinonjs/fake-timers@npm:7.1.0"
+"@sinonjs/fake-timers@npm:>=5, @sinonjs/fake-timers@npm:^9.1.2":
+  version: 9.1.2
+  resolution: "@sinonjs/fake-timers@npm:9.1.2"
   dependencies:
     "@sinonjs/commons": ^1.7.0
-  checksum: 8f3af2426eee1e0464b3a20c676ca195db794979af289f04b9091d7262646683a2f08f246616b45cc91aa6c3215e0dd4244ad06d78dee44a4c5ffc7a655e052e
-  languageName: node
-  linkType: hard
-
-"@sinonjs/fake-timers@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@sinonjs/fake-timers@npm:9.0.0"
-  dependencies:
-    "@sinonjs/commons": ^1.7.0
-  checksum: b410feff05afe879798056809dc61941fb2703af74cfeee19a46f10f3bebe8cb734b70cdc406c555d7bfc7cd6063fdcb3bd8a8097c55b4201624a201ae7f2035
+  checksum: 7d3aef54e17c1073101cb64d953157c19d62a40e261a30923fa1ee337b049c5f29cc47b1f0c477880f42b5659848ba9ab897607ac8ea4acd5c30ddcfac57fca6
   languageName: node
   linkType: hard
 
@@ -2709,7 +2700,7 @@ __metadata:
   resolution: "fetish-nude@workspace:packages/fetish-nude"
   dependencies:
     fetish-lib-normalize-arguments: ^0.1.4
-    sinon: ^13.0.0
+    sinon: ^14.0.0
   languageName: unknown
   linkType: soft
 
@@ -2731,7 +2722,7 @@ __metadata:
     fetish-plugin-serialize-pathname-array: ^0.1.4
     fetish-plugin-serialize-query: ^0.1.4
     fetish-plugin-throw-http-errors: ^0.1.4
-    sinon: ^13.0.0
+    sinon: ^14.0.0
   languageName: unknown
   linkType: soft
 
@@ -2756,7 +2747,7 @@ __metadata:
   resolution: "fetish-plugin-custom-promise@workspace:packages/fetish-plugin-custom-promise"
   dependencies:
     fetish-nude: ^0.1.4
-    sinon: ^13.0.0
+    sinon: ^14.0.0
   languageName: unknown
   linkType: soft
 
@@ -2862,7 +2853,7 @@ __metadata:
     es6-promise: ^4.2.8
     fetish-peer: ^0.1.4
     isomorphic-fetch: ^3.0.0
-    sinon: ^13.0.0
+    sinon: ^14.0.0
   languageName: unknown
   linkType: soft
 
@@ -4836,16 +4827,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nise@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "nise@npm:5.1.0"
+"nise@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "nise@npm:5.1.1"
   dependencies:
-    "@sinonjs/commons": ^1.7.0
-    "@sinonjs/fake-timers": ^7.0.4
+    "@sinonjs/commons": ^1.8.3
+    "@sinonjs/fake-timers": ">=5"
     "@sinonjs/text-encoding": ^0.7.1
     just-extend: ^4.0.2
     path-to-regexp: ^1.7.0
-  checksum: e3843cc125163ce99b7fb0328edf427b981be32c6c719684582cf0a46fb5206173835a9a14dedac3c4833e415ab0e0493f9f4d4163572a3a0c95db39b093166d
+  checksum: d8be29e84a014743c9a10f428fac86f294ac5f92bed1f606fe9b551e935f494d8e0ce1af8a12673c6014010ec7f771f2d48aa5c8e116f223eb4f40c5e1ab44b3
   languageName: node
   linkType: hard
 
@@ -6015,17 +6006,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sinon@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "sinon@npm:13.0.0"
+"sinon@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "sinon@npm:14.0.0"
   dependencies:
     "@sinonjs/commons": ^1.8.3
-    "@sinonjs/fake-timers": ^9.0.0
+    "@sinonjs/fake-timers": ^9.1.2
     "@sinonjs/samsam": ^6.1.1
     diff: ^5.0.0
-    nise: ^5.1.0
+    nise: ^5.1.1
     supports-color: ^7.2.0
-  checksum: bd55dc02f5f632d5b590cd0d35e7886087f25da67ef5e0b2b60d1fce3c2b7d585fff87350a6521b40141d254fa5f0e43606f486bb01bba7a8b1ae655ed5f5bf1
+  checksum: b2aeeb0cdc2cd30f904ccbcd60bae4e1b3dcf3aeeface09c1832db0336be0dbaa461f3b91b769bed84f05c83d45d5072a9da7ee14bc7289daeda2a1214fe173c
   languageName: node
   linkType: hard
 
