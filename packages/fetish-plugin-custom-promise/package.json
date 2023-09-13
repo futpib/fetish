@@ -19,6 +19,6 @@
   "xo": false,
   "devDependencies": {
     "fetish-nude": "^0.1.4",
-    "sinon": "^13.0.0"
+    "sinon": "^16.0.0"
   }
 }

@@ -23,6 +23,6 @@
     "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "sinon": "^13.0.0"
+    "sinon": "^16.0.0"
   }
 }
