@@ -34,6 +34,6 @@
     "fetish-plugin-throw-http-errors": "^0.1.4"
   },
   "devDependencies": {
-    "sinon": "^13.0.0"
+    "sinon": "^18.0.0"
   }
 }
