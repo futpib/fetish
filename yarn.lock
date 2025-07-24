@@ -2130,12 +2130,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-overrides@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "eslint-config-xo-overrides@npm:1.5.0"
+"eslint-config-xo-overrides@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "eslint-config-xo-overrides@npm:2.1.1"
   bin:
     eslint-config-xo-overrides: cli.js
-  checksum: 905440a2f78db8153493b0bd0455d4afd9281e25348d4172ee9a444d4a015f05aba8aea65af26ba54e069fcf6938964b1184d9ff6c742de27c3225e3f2d715d8
+  checksum: fc35d9b242336b2da329f91e82264be001f4089ed92a49c72c991530b7c8cfd066f6d958ed1185c3560bc5ad6df2e91c27bfcbf9f9c9db5a13b733ba7aa60c4f
   languageName: node
   linkType: hard
 
@@ -5850,7 +5850,7 @@ __metadata:
   dependencies:
     ava: ^4.0.0
     coveralls: ^3.1.1
-    eslint-config-xo-overrides: ^1.5.0
+    eslint-config-xo-overrides: ^2.0.0
     globby: ^11.0.4
     husky: ^7.0.4
     nyc: ^15.1.0
